@@ -1,0 +1,37 @@
+(1).Problem Statement - An automobile company
+
+manufactures both a two wheeler (TW) and a four wheeler (FW).
+ A company manager wants to make the production of both types of vehicle according to the given data below:
+
+
+(i)1st data, Total number of vehicle (two-wheeler +four-wheeler)=v
+
+
+(ii)2nd data, Total number of wheels = W
+
+
+The task is to find how many two-wheelers as well as four-wheelers need to manufacture as per the
+
+given data
+
+
+Example:
+
+
+Input:
+200-> Value of V
+
+
+540-> Value of W
+-------------------------------------------------------------------------------------------------------------
+program:
+w=540
+v=200
+tw=((4*v)-w)//2
+fw=v-tw
+print(tw,"two")
+print(fw,"four")
+
+output:
+130 two
+70 four
