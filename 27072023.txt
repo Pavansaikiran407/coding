@@ -1,0 +1,9 @@
+writing numbers in single series
+num=[9,81,72]
+s=""
+for i in num:
+    s+=str(i)
+res=[]
+for i in s:
+    res.append (int(i))
+print(res)
