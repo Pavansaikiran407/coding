@@ -1,0 +1,101 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP1EwiQUTFiShH7V2dtwExY"
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": 13,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OSoqOtXT6oXi",
+        "outputId": "92ef9992-8959-4f2c-8c82-259dfbb0321a"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "134\n"
+          ]
+        }
+      ],
+      "source": [
+        "n1='11'\n",
+        "n2='123'\n",
+        "l1=int(11)\n",
+        "l2=int(123)\n",
+        "l=l1+l2\n",
+        "print(str(l))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "l1=int(456)\n",
+        "l2=int(77)\n",
+        "l=l1+l2\n",
+        "print(str(l))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QXgWOr6M7OOm",
+        "outputId": "81380942-c1a1-4474-b30d-1b77c0873677"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "533\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n=[1,0,3]\n",
+        "k=0\n",
+        "for i in range(len(n)+1):\n",
+        "  if i not in n:\n",
+        "    k+=i\n",
+        "print(k)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LDrkJuX47XVZ",
+        "outputId": "75689c76-81f6-4008-b24c-f8f28edfd84c"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
