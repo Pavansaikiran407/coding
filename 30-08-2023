@@ -1,0 +1,113 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "toc_visible": true,
+      "authorship_tag": "ABX9TyNa/Cz81QGLIE0gS5lg/HVE"
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": 46,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kLsKWJYa0Nm7",
+        "outputId": "a04d1ae0-8b41-483a-84a5-31df7226143f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n"
+          ]
+        }
+      ],
+      "source": [
+        "num=[12,345,2,6,7896]\n",
+        "k=[]\n",
+        "for i in num:\n",
+        "  k.append(str(i))\n",
+        "c=0\n",
+        "for i in k:\n",
+        "  if len(i)%2==0:\n",
+        "    c+=1\n",
+        "print(c)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n=[2,3,4,6,6,5]\n",
+        "p=set(n)\n",
+        "k=[]\n",
+        "for i in p:\n",
+        "  k.append(int(i))\n",
+        "  n1=k.sort()\n",
+        "print(k[-2])\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sRrxxhBA2sIx",
+        "outputId": "59e5c847-e183-4295-b38e-e827b64ce636"
+      },
+      "execution_count": 31,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "perfect number\n",
+        "n=int(input())\n",
+        "s=0\n",
+        "for i in range(1,n):\n",
+        "  if n%i==0:\n",
+        "    s=s+i\n",
+        "if s==n:\n",
+        "   print(\"perfect\")\n",
+        "else:\n",
+        "    print(\"not perfect\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vvwvAUwA3Xsx",
+        "outputId": "b9074fef-802c-4a37-dce9-e5e9402c599c"
+      },
+      "execution_count": 45,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "28\n",
+            "perfect\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
