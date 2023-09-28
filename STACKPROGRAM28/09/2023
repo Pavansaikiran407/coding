@@ -1,0 +1,74 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMaT6WO6+JGo1TgKoBoeQ1x"
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "code",
+      "execution_count": 15,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Fb3uL0Hro-oG",
+        "outputId": "978fe0e1-3689-4958-c942-3b207add6fdd"
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "select the operation 1.push 2.pop 3.quit\n",
+            "1\n",
+            "enter the element:10\n",
+            "['10']\n",
+            "select the operation 1.push 2.pop 3.quit\n",
+            "2\n",
+            "removed element: 10\n",
+            "[]\n",
+            "select the operation 1.push 2.pop 3.quit\n",
+            "3\n"
+          ]
+        }
+      ],
+      "source": [
+        "stack=[]\n",
+        "def push():\n",
+        "    element=input(\"enter the element:\")\n",
+        "    stack.append(element)\n",
+        "    print(stack)\n",
+        "def pop_element():\n",
+        "    if not stack:\n",
+        "      print(\"stack is empty\")\n",
+        "    else:\n",
+        "      e=stack.pop()\n",
+        "      print(\"removed element:\",e)\n",
+        "      print(stack)\n",
+        "while True:\n",
+        "  print(\"select the operation 1.push 2.pop 3.quit\")\n",
+        "  choice=int(input())\n",
+        "  if choice==1:\n",
+        "    push()\n",
+        "  elif choice==2:\n",
+        "      pop_element()\n",
+        "  elif choice==3:\n",
+        "      break\n",
+        "  else:\n",
+        "    print(\"enter the correct number\")\n",
+        "\n"
+      ]
+    }
+  ]
+}
